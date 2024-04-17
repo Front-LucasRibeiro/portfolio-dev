@@ -11,10 +11,18 @@
   p{
     font-size: 0.95rem;
   }
+
+  @media (max-width: 1024px){
+    flex-direction: column;
+  }
 }
 
 .contato {
   display: flex;
+
+  @media (max-width: 1024px){
+    margin-top: 14px;
+  }
 
   @media (max-width: 767px) {
     justify-content: center;

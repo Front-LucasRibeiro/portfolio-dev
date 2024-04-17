@@ -20,9 +20,22 @@ const skills: string[] = [
   'Wordpress',
   'WooCommerce',
   'GulpJS',
+  'Typescript',
+  'Tailwind',
+  'Vite'
 ];
 
 const projetos: Projeto[] = [
+  {
+    nome: "Portfólio Dev",
+    descricao: "Portfólio para mostrar os meus projetos pessoais",
+    tags: ['Vite', 'ReactJS','Sass/scss','Tailwind', 'Typescript' ],
+    github: "https://github.com/Front-LucasRibeiro/portfolio-dev",
+    private: false,
+    linkProjeto: "",
+    data: "17/04/2024",
+    imagem: "/portfolio.jpg"
+  },
   {
     nome: "Agendar Aqui",
     descricao: "Sistema de Agendamento com banco de dados em MySql, Back-end em NodeJS",

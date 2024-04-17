@@ -10,5 +10,14 @@
 
 .developerName{
   text-shadow: 1px 1px 0px #111;
+
+  @media (max-width:480px){
+    font-size: 28px!important;
+  }
 }
 
+.navegacao{
+  @media (max-width:1023px){
+    margin-top: 16px;
+  }
+}

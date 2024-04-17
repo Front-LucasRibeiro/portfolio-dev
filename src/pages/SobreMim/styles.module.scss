@@ -5,6 +5,14 @@ $main-color: #111;
   column-count: 5;
   margin: 22px 0 42px;
   gap: 18px;
+
+  @media (max-width:767px) {
+    column-count: 3;
+  }
+
+  @media (max-width:460px) {
+    column-count: 2;
+  }
 }
 
 .topo {
@@ -15,9 +23,11 @@ $main-color: #111;
   box-sizing: border-box;
   min-height: 68vh;
 
-  @media (max-width:767px) {
+  @media (max-width:1024px) {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    margin: 22px auto;
   }
 
   &__sobre {
@@ -91,6 +101,10 @@ $main-color: #111;
 
 .contato {
   display: flex;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 
   @media (max-width: 767px) {
     justify-content: center;
