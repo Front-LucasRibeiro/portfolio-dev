@@ -1,0 +1,26 @@
+.card{
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+}
+
+.imageProject{  
+  img{
+    object-fit: cover;
+  }
+}
+
+.btn{
+  border: 1px solid;
+
+  &:hover {    
+    span{
+      filter: invert(1);
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;  
+}

@@ -1,0 +1,14 @@
+.linkContato{
+  &:hover{
+    background: #ededed;
+    transform: scale(1.08);
+    border: 1px solid #111;
+    color: #111;
+    outline: 2px solid #fff;
+  }
+}
+
+.developerName{
+  text-shadow: 1px 1px 0px #111;
+}
+
