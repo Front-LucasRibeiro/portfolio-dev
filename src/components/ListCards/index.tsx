@@ -1,42 +1,14 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import s from './styles.module.scss';
+import { Projeto } from '../Shared/IProjeto';
 
-export const ListCards = () => {
 
-  interface Projeto {
-    nome: string;
-    descricao: string;
-    tags: string[];
-    github: string;
-    linkProjeto: string;
-    private: boolean;
-    data: string;
-    imagem: string;
-  }
+interface ListCardsProps {
+  projetos: Projeto[];
+}
 
-  const projetos: Projeto[] = [
-    {
-      nome: "Agendar Aqui",
-      descricao: "Sistema de Agendamento com banco de dados em MySql, Back-end em NodeJS",
-      tags: ['ReactJS', 'Sass/scss', 'NodeJS', 'Api', 'MySql', 'Nginx', 'VPS', 'Nodemailer'],
-      github: "https://github.com/Front-LucasRibeiro/barber-shop",
-      private: true,
-      linkProjeto: "https://admin.agendaraqui.com.br/",
-      data: "04/04/2024",
-      imagem: "/agendar-aqui.jpg"
-    },
-    {
-      nome: "Camisetas Mix",
-      descricao: "Loja virtual utilizando Wordpress e plugin WooCommerce",
-      tags: ['PHP', 'WooCommerce', 'Wordpress', 'Sass/Scss', 'Javascript', 'JQuery', 'GulpJS'],
-      github: "https://github.com/Front-LucasRibeiro/camisetas-mix",
-      private: false,
-      linkProjeto: "https://camisetasmix.com.br/",
-      data: "01/02/2024",
-      imagem: "/camisetas-mix.jpg"
-    },
-  ];
-
+const ListCards:React.FC<ListCardsProps> = ({projetos}) => {
 
   return (
     <ul className={`${s.card} mt-12 grid gap-12 mb-14`}>
