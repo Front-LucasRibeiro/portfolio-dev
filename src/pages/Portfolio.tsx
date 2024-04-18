@@ -25,6 +25,7 @@ const skills: string[] = [
   'Vite',
   'Webpack',
   'Vanilla JavaScript',
+  'VueJS'
 ];
 
 const projetos: Projeto[] = [
@@ -67,6 +68,16 @@ const projetos: Projeto[] = [
     linkProjeto: "https://front-lucasribeiro.github.io/teste-maeztra-lucas-maranho/",
     data: "13/03/2024",
     imagem: "/home-page.jpg"
+  },
+  {
+    nome: "Sistema de Cadastro",
+    descricao: "Sistema de Cadastro de produtos e associação de produtos aos clientes.",
+    tags: ['VueJS', 'Sass/scss'],
+    github: "https://github.com/Front-LucasRibeiro/cadastro-data-stone",
+    private: false,
+    linkProjeto: "https://cadastro-data-stone.vercel.app/cadastro-clientes",
+    data: "04/03/2024",
+    imagem: "/sistema-cadastro.jpg"
   },
   {
     nome: "Camisetas Mix",
