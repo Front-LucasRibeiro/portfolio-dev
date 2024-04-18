@@ -32,7 +32,7 @@ const projetos: Projeto[] = [
     tags: ['Vite', 'ReactJS','Sass/scss','Tailwind', 'Typescript' ],
     github: "https://github.com/Front-LucasRibeiro/portfolio-dev",
     private: false,
-    linkProjeto: "",
+    linkProjeto: "https://front-lucasribeiro.github.io/portfolio-dev",
     data: "17/04/2024",
     imagem: "/portfolio.jpg"
   },
