@@ -6,7 +6,7 @@ import { Projeto } from "../components/Shared/IProjeto";
 type ListaProjetos = Projeto[];
 
 const skills: string[] = [
-  'CSS', 
+  'CSS',
   'HTML',
   'Javascript',
   'JQuery',
@@ -22,14 +22,16 @@ const skills: string[] = [
   'GulpJS',
   'Typescript',
   'Tailwind',
-  'Vite'
+  'Vite',
+  'Webpack',
+  'Vanilla JavaScript',
 ];
 
 const projetos: Projeto[] = [
   {
     nome: "Portfólio Dev",
     descricao: "Portfólio para mostrar os meus projetos pessoais",
-    tags: ['Vite', 'ReactJS','Sass/scss','Tailwind', 'Typescript' ],
+    tags: ['Vite', 'ReactJS', 'Sass/scss', 'Tailwind', 'Typescript'],
     github: "https://github.com/Front-LucasRibeiro/portfolio-dev",
     private: false,
     linkProjeto: "https://portfolio-dev-drab.vercel.app/",
@@ -47,6 +49,16 @@ const projetos: Projeto[] = [
     imagem: "/agendar-aqui.jpg"
   },
   {
+    nome: "Página de Categoria",
+    descricao: "Simulando o desenvolvimento de filtro e página de categoria de um e-commerce.",
+    tags: ['GulpJS', 'Sass/scss', 'Typescript', 'Webpack', 'HTML', 'Javascript', 'Vanilla JavaScript', 'API'],
+    github: "https://github.com/Front-LucasRibeiro/desenvolvedor-cadastra",
+    private: false,
+    linkProjeto: "https://front-lucasribeiro.github.io/page-category/dist/index.html",
+    data: "22/03/2024",
+    imagem: "/category-page.jpg"
+  },
+  {
     nome: "Camisetas Mix",
     descricao: "Loja virtual utilizando Wordpress e plugin WooCommerce",
     tags: ['PHP', 'WooCommerce', 'Wordpress', 'Sass/Scss', 'Javascript', 'JQuery', 'GulpJS'],
@@ -56,43 +68,34 @@ const projetos: Projeto[] = [
     data: "01/02/2024",
     imagem: "/camisetas-mix.jpg"
   },
-  // {
-  //   nome: "Página de Categoria com Filtros",
-  //   descricao: "Simulando o desenvolvimento de filtro e página de categoria de um e-commerce.",
-  //   tags: ['GulpS', 'Sass/scss', 'Typescript', 'Webpack','HTML', 'Javascript', 'Vanilla JavaScript', 'API'],
-  //   github: "https://github.com/Front-LucasRibeiro/desenvolvedor-cadastra",
-  //   private: false,
-  //   linkProjeto: "",
-  //   data: "22/03/2024",
-  //   imagem: ""
-  // },
+
 ];
 
-const Portfolio: React.FC  = () => {
+const Portfolio: React.FC = () => {
   const [listaProjetos, setListaProjetos] = useState<ListaProjetos>(projetos);
   const [term, setTerm] = useState<string>('');
 
-  
-   // Função de retorno de chamada para receber os dados do filho
+
+  // Função de retorno de chamada para receber os dados do filho
   const termoFilter = (dados: string): void => {
     setTerm(dados);
   };
 
-  useEffect( () => {
+  useEffect(() => {
 
     const listaFitered = projetos.map(item => {
       const termoLowerCase = term.toLowerCase();
-      if(item.tags.some(tag => tag.toLowerCase().includes(termoLowerCase))){
+      if (item.tags.some(tag => tag.toLowerCase().includes(termoLowerCase))) {
         return item;
-      }else{
+      } else {
         return null;
       }
     }).filter(Boolean) as Projeto[]; // removendo os elementos nulos da lista
 
     // se tiver tags correspondentes mostra lista filtrada, se não mostra original 
-    if(listaFitered.length > 0){
+    if (listaFitered.length > 0) {
       setListaProjetos(listaFitered);
-    }else{
+    } else {
       setListaProjetos(projetos);
     }
 
@@ -101,7 +104,7 @@ const Portfolio: React.FC  = () => {
   return (
     <>
       <Filtro skills={skills} termoFilter={termoFilter} />
-      <ListCards projetos={listaProjetos} /> 
+      <ListCards projetos={listaProjetos} />
     </>
   )
 }

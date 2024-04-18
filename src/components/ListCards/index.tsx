@@ -27,7 +27,7 @@ const ListCards:React.FC<ListCardsProps> = ({projetos}) => {
               </p>
               <p className="text-gray-700 text-base mt-4">{projeto.data}</p>
             </div>
-            <div className="px-6 pt-4 pb-2">
+            <div className="px-6 pt-4 pb-2 h-[168px]">
               {
                 projeto.tags.map((tag, index) => {
                   return (
