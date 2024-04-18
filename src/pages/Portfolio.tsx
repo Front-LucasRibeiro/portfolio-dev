@@ -56,16 +56,16 @@ const projetos: Projeto[] = [
     data: "01/02/2024",
     imagem: "/camisetas-mix.jpg"
   },
-  {
-    nome: "Página de Categoria com Filtros",
-    descricao: "Simulando o desenvolvimento de filtro e página de categoria de um e-commerce.",
-    tags: ['GulpS', 'Sass/scss', 'Typescript', 'Webpack','HTML', 'Javascript', 'Vanilla JavaScript', 'API'],
-    github: "https://github.com/Front-LucasRibeiro/desenvolvedor-cadastra",
-    private: false,
-    linkProjeto: "",
-    data: "22/03/2024",
-    imagem: ""
-  },
+  // {
+  //   nome: "Página de Categoria com Filtros",
+  //   descricao: "Simulando o desenvolvimento de filtro e página de categoria de um e-commerce.",
+  //   tags: ['GulpS', 'Sass/scss', 'Typescript', 'Webpack','HTML', 'Javascript', 'Vanilla JavaScript', 'API'],
+  //   github: "https://github.com/Front-LucasRibeiro/desenvolvedor-cadastra",
+  //   private: false,
+  //   linkProjeto: "",
+  //   data: "22/03/2024",
+  //   imagem: ""
+  // },
 ];
 
 const Portfolio: React.FC  = () => {
