@@ -89,6 +89,26 @@ const projetos: Projeto[] = [
     data: "01/02/2024",
     imagem: "/camisetas-mix.jpg"
   },
+  {
+    nome: "Home Page",
+    descricao: "Home Page com efeito Parallax em css",
+    tags: ['HTML', 'CSS', 'JQuery'],
+    github: "https://github.com/Front-LucasRibeiro/Layout-Barcos",
+    private: false,
+    linkProjeto: "https://front-lucasribeiro.github.io/Layout-Barcos/",
+    data: "24/02/2020",
+    imagem: "/home-page-parallax.jpg"
+  },
+  {
+    nome: "Sistema Campeonato Brasileiro",
+    descricao: "Geração de resultados de jogos e tabela do campeonato",
+    tags: ['HTML', 'CSS', 'Javascript', 'JQuery'],
+    github: "https://github.com/Front-LucasRibeiro/Sistema-Campeonato-Brasileiro",
+    private: false,
+    linkProjeto: "https://front-lucasribeiro.github.io/Sistema-Campeonato-Brasileiro/brasileirao.html",
+    data: "06/11/2019",
+    imagem: "/sistema-campeonato-brasileiro.jpg"
+  },
 
 ];
 
