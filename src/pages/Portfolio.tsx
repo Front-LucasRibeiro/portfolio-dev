@@ -84,7 +84,7 @@ const projetos: Projeto[] = [
     descricao: "Loja virtual utilizando Wordpress e plugin WooCommerce",
     tags: ['PHP', 'WooCommerce', 'Wordpress', 'Sass/Scss', 'Javascript', 'JQuery', 'GulpJS'],
     github: "https://github.com/Front-LucasRibeiro/camisetas-mix",
-    private: false,
+    private: true,
     linkProjeto: "https://camisetasmix.com.br/",
     data: "01/02/2024",
     imagem: "/camisetas-mix.jpg"
