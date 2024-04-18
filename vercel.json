@@ -1,0 +1,30 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "builds": [
+    {
+      "src": "database.sqlite",
+      "use": "@vercel/static"
+    },
+    {
+      "src": ".sequelizerc",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "/src/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "/api/*",
+      "use": "@vercel/node"
+    }
+  ]
+}
