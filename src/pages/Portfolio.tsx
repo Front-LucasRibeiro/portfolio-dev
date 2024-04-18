@@ -59,6 +59,16 @@ const projetos: Projeto[] = [
     imagem: "/category-page.jpg"
   },
   {
+    nome: "Home Page",
+    descricao: "Simulando home page de um e-commerce.",
+    tags: ['GulpJS', 'Sass/scss', 'HTML', 'Javascript', 'JQuery'],
+    github: "https://github.com/Front-LucasRibeiro/teste-maeztra-lucas-maranho",
+    private: false,
+    linkProjeto: "https://front-lucasribeiro.github.io/teste-maeztra-lucas-maranho/",
+    data: "13/03/2024",
+    imagem: "/home-page.jpg"
+  },
+  {
     nome: "Camisetas Mix",
     descricao: "Loja virtual utilizando Wordpress e plugin WooCommerce",
     tags: ['PHP', 'WooCommerce', 'Wordpress', 'Sass/Scss', 'Javascript', 'JQuery', 'GulpJS'],
