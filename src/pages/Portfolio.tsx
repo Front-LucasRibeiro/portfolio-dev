@@ -25,10 +25,21 @@ const skills: string[] = [
   'Vite',
   'Webpack',
   'Vanilla JavaScript',
-  'VueJS'
+  'VueJS',
+  'Angular'
 ];
 
 const projetos: Projeto[] = [
+  {
+    nome: "Rick and Morty",
+    descricao: "Listagem de personagens, busca, favoritos, paginação",
+    tags: ['Angular', 'NgRx','Rxjs', 'Sass/scss', 'Typescript', 'API'],
+    github: "https://github.com/Front-LucasRibeiro/rick-and-morty",
+    private: false,
+    linkProjeto: "https://rick-and-morty-blue-sigma.vercel.app",
+    data: "28/04/2024",
+    imagem: "/rick-and-morty.jpg"
+  },
   {
     nome: "Portfólio Dev",
     descricao: "Portfólio para mostrar os meus projetos pessoais",
