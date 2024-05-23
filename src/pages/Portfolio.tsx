@@ -24,12 +24,56 @@ const skills: string[] = [
   'Tailwind',
   'Vite',
   'Webpack',
-  'Vanilla JavaScript',
   'VueJS',
-  'Angular'
+  'Angular',
+  'Vite',
+  'Docker',
+  'Laravel',
+  'NestJS',
+  'PostgreSQL'
 ];
 
 const projetos: Projeto[] = [
+  {
+    nome: "Sistema de suporte",
+    descricao: "Sistema de suporte com perfil de usuário Colaborador e Cliente.",
+    tags: ['PHP', 'Laravel','Mysql', 'Javascript', 'HTML', 'Blade'],
+    github: "https://github.com/Front-LucasRibeiro/support-system",
+    private: false,
+    linkProjeto: "",
+    data: "22/05/2024",
+    imagem: "/suporte-system.jpg"
+  },
+  {
+    nome: "Sistema de cadastro de usuários",
+    descricao: "Criação de autenticação, api's, validação backend e frontend",
+    tags: ['NestJS', 'PostgreSQL','JWT', 'Joi', 'VueJS', 'Sass/scss', 'HTML', 'API', 'Docker'],
+    github: "https://github.com/Front-LucasRibeiro/fullstack-app-crud",
+    private: false,
+    linkProjeto: "",
+    data: "17/05/2024",
+    imagem: "/system-fullstack.jpg"
+  },
+  // {
+  //   nome: "Sistema de Cadastro com VueJS",
+  //   descricao: "Testar com user: admin, password: admin",
+  //   tags: ['Javascript', 'HTML','CSS', 'Typescript', 'Vite', 'Sass/scss', 'Vuex', 'Zod', 'API'],
+  //   github: "https://github.com/Front-LucasRibeiro/fcc-registration-system",
+  //   private: false,
+  //   linkProjeto: "",
+  //   data: "08/05/2024",
+  //   imagem: "/fcc-crud.jpg"
+  // },
+  {
+    nome: "Gráficos",
+    descricao: "Criação de gráfico com chart.js",
+    tags: ['Javascript', 'HTML','CSS'],
+    github: "https://github.com/Front-LucasRibeiro/mirante-tecnologia",
+    private: false,
+    linkProjeto: "https://front-lucasribeiro.github.io/mirante-tecnologia/",
+    data: "29/04/2024",
+    imagem: "/grafico.jpg"
+  },
   {
     nome: "Rick and Morty",
     descricao: "Listagem de personagens, busca, favoritos, paginação",
@@ -63,7 +107,7 @@ const projetos: Projeto[] = [
   {
     nome: "Página de Categoria",
     descricao: "Simulando o desenvolvimento de filtro e página de categoria de um e-commerce.",
-    tags: ['GulpJS', 'Sass/scss', 'Typescript', 'Webpack', 'HTML', 'Javascript', 'Vanilla JavaScript', 'API'],
+    tags: ['GulpJS', 'Sass/scss', 'Typescript', 'Webpack', 'HTML', 'Javascript', 'API'],
     github: "https://github.com/Front-LucasRibeiro/desenvolvedor-cadastra",
     private: false,
     linkProjeto: "https://front-lucasribeiro.github.io/page-category/dist/index.html",

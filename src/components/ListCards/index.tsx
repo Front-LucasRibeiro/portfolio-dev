@@ -16,7 +16,7 @@ const ListCards:React.FC<ListCardsProps> = ({projetos}) => {
         return (
           <li key={index} className="w-[98%] rounded overflow-hidden shadow-lg gap-10">
             <picture className={s.imageProject}>
-              <img className="w-full h-[100px]" src={projeto.imagem} alt="Sunset in the mountains" />
+              <img className="w-full h-[100px]" src={projeto.imagem} alt={projeto.nome} />
             </picture>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{projeto.nome}</div>
@@ -59,9 +59,12 @@ const ListCards:React.FC<ListCardsProps> = ({projetos}) => {
             }
 
 
-            <Link to={projeto.linkProjeto} target="_blank" rel="noopener noreferrer" className={`flex align-center justify-center w-11/12 block m-auto mb-4 mt-4 bg-transparent hover:bg-gray-900 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded ${s.btn}`}>
-              <span className={`${s.icon} bg-[url('/deploy.png')] bg-no-repeat`}></span> Ver Projeto
-            </Link>
+            {
+              projeto.linkProjeto && 
+              <Link to={projeto.linkProjeto} target="_blank" rel="noopener noreferrer" className={`flex align-center justify-center w-11/12 block m-auto mb-4 mt-4 bg-transparent hover:bg-gray-900 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded ${s.btn}`}>
+                <span className={`${s.icon} bg-[url('/deploy.png')] bg-no-repeat`}></span> Ver Projeto
+              </Link>
+            }
           </li>
         );
       })}
