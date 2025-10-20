@@ -24,4 +24,7 @@ export const skills: string[] = [
   "Laravel",
   "NestJS",
   "PostgreSQL",
+  "GraphQL",
+  "JSX",
+  "Apollo Client",
 ];
