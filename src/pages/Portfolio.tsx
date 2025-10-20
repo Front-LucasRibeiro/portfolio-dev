@@ -20,6 +20,7 @@ const skills: string[] = [
   'Wordpress',
   'WooCommerce',
   'GulpJS',
+  'GraphQL',
   'Typescript',
   'Tailwind',
   'Vite',
@@ -34,6 +35,16 @@ const skills: string[] = [
 ];
 
 const projetos: Projeto[] = [
+  {
+    nome: "Aplicação Cadastro de Treinos de corrida e caminhada",
+    descricao: "Aplicação de estudos sobre APIs utilizando o meio de comunicação GraphQL.",
+    tags: ['GraphQL', 'Tailwind','Typescript', 'Javascript', 'HTML', 'JSX', 'ReactJS', 'Apollo Client', 'API'],
+    github: "https://github.com/Front-LucasRibeiro/react-runner-circle",
+    private: false,
+    linkProjeto: "https://react-runner-circle.vercel.app/",
+    data: "19/10/2025",
+    imagem: "/runner-circle.jpg"
+  },
   {
     nome: "Sistema de suporte",
     descricao: "Sistema de suporte com perfil de usuário Colaborador e Cliente.",
